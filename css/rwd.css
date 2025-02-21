@@ -22,6 +22,7 @@
 
     #project>h2::after,
     #about>h2::after,
+    #update>h2::after,
     #client>h2::after {
         width: 8rem;
         height: 0.25rem;
@@ -30,6 +31,7 @@
 
     #project>h2::before,
     #about>h2::before,
+    #update>h2::before,
     #client>h2::before {
         width: 8rem;
         height: 0.25rem;
@@ -47,6 +49,7 @@
 @media screen and (max-width: 1200px) {
 
     #project>h2::after,
+    #update>h2::after,
     #about>h2::after,
     #client>h2::after {
         width: 10rem;
@@ -59,6 +62,7 @@
 
     #project>h2::before,
     #about>h2::before,
+    #update>h2::before,
     #client>h2::before {
         width: 10rem;
         right: 10%;
@@ -92,6 +96,7 @@
 
     #project>h2::after,
     #about>h2::after,
+    #update>h2::after,
     #client>h2::after {
         width: 4rem;
         left: 2%;
@@ -100,6 +105,7 @@
 
     #project>h2::before,
     #about>h2::before,
+    #update>h2::before,
     #client>h2::before {
         width: 4rem;
         right: 2%;
