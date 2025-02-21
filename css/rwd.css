@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px) {
+    nav .icons {
+        width: 70%;
+    }
+
+    #main-head h1 {
+        font-size: 3rem;
+    }
+
+    .footer-logo .col-md-4 {
+        margin: 0.75rem 0;
+    }
+
+    .copy-right {
+        font-size: 0.8rem;
+    }
+
+    #project {
+        width: 90%;
+        margin: auto;
+    }
+
+    #project>h2::after,
+    #about>h2::after,
+    #client>h2::after {
+        width: 8rem;
+        height: 0.25rem;
+        left: 10%;
+    }
+
+    #project>h2::before,
+    #about>h2::before,
+    #client>h2::before {
+        width: 8rem;
+        height: 0.25rem;
+        right: 10%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    #project .row h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #project>h2::after,
+    #about>h2::after,
+    #client>h2::after {
+        width: 10rem;
+        left: 10%;
+    }
+
+    #contact-btn {
+        width: 110% !important;
+    }
+
+    #project>h2::before,
+    #about>h2::before,
+    #client>h2::before {
+        width: 10rem;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main-head h1 {
+        font-size: 2rem;
+    }
+
+    #main-head p {
+        font-size: 0.9rem;
+    }
+
+    .navbar>div {
+        width: 130% !important; 
+    }
+
+    .navbar-brand {
+        width: 65%;
+    }
+
+    .navbar {
+        width: 102%;
+    }
+
+    .copy-right {
+        font-size: 1rem;
+    }
+
+    #project>h2::after,
+    #about>h2::after,
+    #client>h2::after {
+        width: 4rem;
+        left: 2%;
+
+    }
+
+    #project>h2::before,
+    #about>h2::before,
+    #client>h2::before {
+        width: 4rem;
+        right: 2%;
+
+    }
+}
