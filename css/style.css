@@ -10,6 +10,69 @@
     background-color: #013c7e;
 }
 
+#main-head {
+    /* background-image: url(../img/3325.jpg); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: bgChange 15s ease-in-out infinite;
+}
+
+.layer {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.head-text {
+    z-index: 555;
+    width: 90%;
+}
+
+.icons-center i {
+    font-size: 5rem;
+    height: 5rem;
+    color: gray;
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url(../img/3325.jpg);
+    }
+
+    25% {
+        background-image: url(../img/5548.jpg);
+    }
+
+    50% {
+        background-image: url(../img/1574856647_550_69001_2018_2_21_12_7_3_370-740x43511-1.jpg);
+    }
+
+    75% {
+        background-image: url(../img/1574856647_550_69001_2018_2_21_12_7_3_370ال-740x435-1.jpg);
+    }
+
+    100% {
+        background-image: url(../img/3325.jpg);
+    }
+
+}
+
+.middle-nav>div i {
+    transition: all 0.7s;
+}
+
+.middle-nav>div i:hover {
+    transform: scale(1.1);
+
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: animate__fadeIn;
+    animation-duration: 10s;
+}
+
 .main-color {
     color: #013c7e;
 }
@@ -22,9 +85,11 @@
 .dropdown-menu li a {
     transition: all 1s;
 }
-.navbar-brand{
+
+.navbar-brand {
     width: 20%;
 }
+
 nav .icons {
     justify-content: space-evenly;
     width: 30%;
@@ -91,20 +156,16 @@ nav {
     left: 50%;
     transition: all 0.5s;
 }
-.details{
+
+.details {
     transition: all 0.5s;
 }
-.language{
-    /* width: 3rem;
-    height: 3rem;
-    background: darkgreen;
-    top:50%;
-    right: 22.5%; */
-}
-.details:hover{
+
+.details:hover {
     text-decoration-line: underline;
     color: #013c7e !important;
 }
+
 .circle-mouse {
     width: 0.4rem;
     height: 0.4rem;
@@ -193,7 +254,7 @@ nav {
 
 #project>h2::before,
 #about>h2::before,
-#client>h2::before ,
+#client>h2::before,
 #update>h2::before {
     content: '';
     width: 15rem;
@@ -258,7 +319,6 @@ footer {
     /* background: #a8cca8; */
 }
 
-.marquee-item img {}
 
 .marquee-item:last-child {
     margin: 0 50px 0 20px;

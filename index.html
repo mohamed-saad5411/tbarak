@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rwd.css">
+    <link rel="stylesheet" href="css/animate.css">
+
 </head>
 
 <body id="arabic">
-    <nav class="navbar position-fixed top-0 start-0 end-0 navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid align-items-center mx-5">
+    <nav class="navbar d-non position-fixed w-100 top-0 start-0 end-0 navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg- align-items-center mx-5">
             <a class="navbar-brand bg-" href="#"><img src="img/logo23.png" class="w-75" alt="شركة تبارك"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -102,11 +104,13 @@
                                 </a></li>
                         </ol>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><div class="d-flex align-items-center justify-content-center">
-                            <img src="img/download (2).png" alt="">
-                            <p class="pe-2 m-0">English</p>
-                        </div></a>
+                    <li class="nav-item bg- m-">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <img src="img/download (2).png" alt="">
+                                <p class="pe-2 m-0">English</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
                 <div class="d-flex icons bg-">
@@ -136,18 +140,121 @@
             </div>
         </div>
     </nav>
-    <header id="main-head" class="w-100 bg- d-flex justify-content-start align-items-center vh-100">
-        <div id="carouselExampleAutoplaying" class="overflow-hidden carousel slide w-100" data-bs-ride="carousel">
+    <nav
+        class="bg-white py-3 nav-sm d-none position-fixed d-flex align-items-center justify-content-evenly container start-0 end-0">
+        <div class=""><img src="img/logo23.png" class="w-75 pointer bg-" alt=""></div>
+        <div id="openNav">
+            <i class="fa-solid fa-bars text-dark  pointer"></i>
+        </div>
+    </nav>
+    <ul id="navList"
+        class='list-unstyled d-none list-small top-0 end-0 start-0 bottom-0 overflow-hidden d- d-flex flex-column align-items-center vh- p-0 m-0'>
+        <div id="closeNav" class="mb-5">
+            <i class="fa-solid fa-xmark text-white pt-5 my-5 fa-2xl pointer"></i>
+        </div>
+        <div class="bg- nav-items">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+            </li>
+            <li id="contact" class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    تواصل معنا
+                </a>
+                <ul class="w-100 list-unstyled pb-2 bg- contact">
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-dark"
+                            href="#">- عن الشركة</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-dark"
+                            href="#">- موظف</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-dark"
+                            href="#">- مورد</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-dark"
+                            href="#">- مقاول</a></li>
+                </ul>
+            </li>
+            <li id="operation" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    الصيانة والتشغيل </a>
+                <ul class="w-100 list-unstyled bg- pb-2 operation">
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- قاعدة محمد نجيب</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- الكلية البحرية</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- محطة القمر الصناعى </a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- تطوير هضبة الأهرام</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- محطة تموين اويل ليبيا</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- فندق المحروسة</a></li>
+                </ul>
+            </li>
+            <li id="infra" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    البنية التحتية
+                </a>
+                <ul class="w-100 list-unstyled pb-2 bg infra">
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات القاهرة</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- العاصمة الإدارية الجديدة</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات الاسكندرية</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات الشرقية</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات كفر الشيخ</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات العلمين</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات بورسعيد</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات قنا</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروعات اسوان</a></li>
+                </ul>
+            </li>
+            <li id="structure" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    الأعمال الإنشائية
+                </a>
+                <ul class="w-100 list-unstyled pb-2 bg- structure">
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- كمباوند أنطونيادس</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- مشروع أليكس ويست</a></li>
+                    <li class="p-0 bg- m-0"><a class="text-end text-decoration-none fw-bold fs-6 py-0 text-muted"
+                            href="#">- انشاء كافية زانيليز</a></li>
+                </ul>
+            </li>
+            <li class="nav-item my-4">
+                <a class="nav-link" aria-current="page" href="#">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="img/download (2).png" alt="">
+                        <p class="pe-2 m-0">English</p>
+                    </div>
+                </a>
+            </li>
+        </div>
+        <!-- <li><a href="" class="text-decoration-none text-white">home</a></li>
+        <li><a href="" class="text-decoration-none text-white">about</a></li>
+        <li><a href="" class="text-decoration-none text-white">gallery</a></li>
+        <li><a href="" class="text-decoration-none text-white">contact</a></li> -->
+    </ul>
+
+    <header id="main-head"
+        class="w-100 d-non vh-100 d-flex position-relative justify-content-start align-items-center vh-100">
+        <!-- <div id="carouselExampleAutoplaying" class="overflow-hidden carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-inner position-relative">
                 <div class="carousel-item position-relative active">
                     <div class="text-white position-absolute top-50 end-0 translate-middle-y me-5">
                         <h1 class="">نبنى البنية التحتية للغد</h1>
                         <p>منذ أن تأسست شركة تبارك و حتي اليوم وهي تنافس كبري الشركات التي تعمل في مجال البنية التحتية و
                             الانشاءات</p>
-
-                        <!-- <h1 class="">متخصصون في </h1>
-                        <p>شبكات مياه الشرب والخزانات ومحطات الرفع والمعالجة للصرف الصحى وأعمال الكهرباء والكهروميكانيك
-                        </p> -->
                     </div>
                     <img src="img/3325.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="...">
                 </div>
@@ -170,9 +277,21 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div> -->
+        <div class="layer vh-100 w-100 position-absolute"></div>
+        <div class="bg head-text wow bounceInRight" data-wow-delay="0.3s">
+            <div class="head-contant text-white me-5 ">
+                <h1 class="">نبنى البنية التحتية للغد</h1>
+                <p>منذ أن تأسست شركة تبارك و حتي اليوم وهي تنافس كبري الشركات التي تعمل في مجال البنية التحتية و
+                    الانشاءات</p>
+
+                <!-- <h1 class="">متخصصون في </h1>
+                <p>شبكات مياه الشرب والخزانات ومحطات الرفع والمعالجة للصرف الصحى وأعمال الكهرباء والكهروميكانيك
+                </p> -->
+            </div>
         </div>
-        <a href="#about">
-            <div class="mouse-shape position-absolute border border-1 rounded-pill d-flex justify-content-center">
+        <a id="aboutRef" href="#about" class="">
+            <div class="mouse-shape bg- position-absolute border border-1 rounded-pill d-flex justify-content-center">
                 <div class="circle-mouse position-absolute rounded-circle"></div>
             </div>
         </a>
@@ -225,7 +344,25 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="bg-dark w-100 vh-">
+            <div class="container middle-nav py-5 mv-4 icons-center d-flex align-items-center justify-content-evenly">
+                <div class="text-center wow fadeIn">
+                    <i class="fa-solid pointer fa-address-card"></i>
+                    <p class="text-white mt-3 fw-bold h2">Contact</p>
+                </div>
+                <div class="text-center wow fadeIn" data-wow-delay="0.8s">
+                    <i class="fa-solid pointer fa-screwdriver-wrench"></i>
+                    <p class="text-white mt-3 fw-bold h2">Repairing</p>
+                </div>
+                <div class="text-center wow fadeIn" data-wow-delay="1.1s">
+                    <i class="fa-solid pointer fa-hammer"></i>
+                    <p class="text-white mt-3 fw-bold h2">Infras</p>
+                </div>
+                <div class="text-center wow fadeIn" data-wow-delay="1.3s">
+                    <i class="fa-solid pointer fa-person-digging"></i>
+                    <p class="text-white mt-3 fw-bold h2">Consracion</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -233,11 +370,11 @@
         <h2 class="h1 main-color my-5 text-center">اهم المشاريع</h2>
         <div class="container text-center">
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 pointer stracutre">
+                <div   class="col-md-6 overflow-hidden col-lg-4 pointer stracutre">
                     <h2 class="my-4">المشاريع الانشائية</h2>
                     <div class="icon-project d-flex m-auto rounded-circle pointer"><i
                             class="fa-solid text-white fa-2xl fa-person-digging"></i></div>
-                    <div id="carouselExampleAutoplaying" class="my-3 overflow-hidden carousel slide w-100"
+                    <div data-wow-delay="0.3s" id="carouselExampleAutoplaying" class="my-3 wow fadeInRightBig overflow-hidden carousel slide w-100"
                         data-bs-ride="carousel">
                         <div class="carousel-inner my-3 p-2  position-relative rounded-4">
                             <div data-bs-interval="2500"
@@ -276,11 +413,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 pointer stracutre">
+                <div   class="col-md-6 overflow-hidden col-lg-4 pointer stracutre">
                     <h2 class="my-4">مشاريع البنية التحتية</h2>
                     <div class="icon-project d-flex m-auto rounded-circle pointer"><i
                             class="fa-solid text-white  fa-2xl fa-droplet"></i></div>
-                    <div id="carouselExampleAutoplaying" class="my-3 overflow-hidden carousel slide w-100"
+                    <div data-wow-delay="0.5s" id="carouselExampleAutoplaying" class="my-3 wow fadeInDownBig overflow-hidden carousel slide w-100"
                         data-bs-ride="carousel">
                         <div class="carousel-inner my-3 p-2  position-relative rounded-4">
                             <div data-bs-interval="2500"
@@ -328,11 +465,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 pointer stracutre">
+                <div   class="col-md-6 overflow-hidden col-lg-4 pointer stracutre">
                     <h2 class="my-4">الصيانة والتشغيل</h2>
                     <div class="icon-project d-flex m-auto rounded-circle pointer"><i
                             class="fa-solid text-white  fa-2xl fa-wrench"></i></div>
-                    <div id="carouselExampleAutoplaying" class="my-3 overflow-hidden carousel slide w-100"
+                    <div data-wow-delay="0.7s" id="carouselExampleAutoplaying" class="my-3 wow fadeInLeftBig overflow-hidden carousel slide w-100"
                         data-bs-ride="carousel">
                         <div class="carousel-inner my-3 p-2  position-relative rounded-4">
                             <div data-bs-interval="2800"
@@ -619,6 +756,10 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
